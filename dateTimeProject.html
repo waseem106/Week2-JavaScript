@@ -47,11 +47,11 @@
           
             if (diff <= 0) {
                 document.getElementById('countdown').textContent = "The event has started!";
-                clearInterval(timerInterval); // Stop the timer
+                clearInterval(timerInterval); 
                 return;
             }
 
-        // Calculate time components
+        
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
