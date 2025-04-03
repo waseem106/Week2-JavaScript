@@ -141,3 +141,7 @@ console.log(someResult)
 let nestedarray=[234,[34,[34,[4,[34,[434]]]]],34]
 let flatArray=nestedarray.flat(Infinity)
 console.log(flatArray)
+
+
+
+
