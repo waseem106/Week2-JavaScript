@@ -59,10 +59,11 @@
     <div class="main">
         <h2>Color Scheme Switcher</h2>
         <div class="boxes">
+            <!-- <button onclick="addBackground(this)"></button>
             <button onclick="addBackground(this)"></button>
             <button onclick="addBackground(this)"></button>
-            <button onclick="addBackground(this)"></button>
-            <button onclick="addBackground(this)"></button>
+            <button onclick="addBackground(this)"></button> -->
+            <button></button><button></button><button></button><button></button>
         </div>
         <p>Try to click one of the colors above to change the background color of page!</p>
     </div>
@@ -80,10 +81,12 @@
     //    second way to achieve it 
 
        document.querySelectorAll(".boxes button").forEach((btn) => {
-        btn.addEventListener('click',function(){
+        btn.addEventListener('click',function(e){
             const bgColor=window.getComputedStyle(btn).backgroundColor
             console.log(bgColor)
             document.body.style.backgroundColor=`${bgColor}`
+            console.log(e)
+
         })
        });
 
