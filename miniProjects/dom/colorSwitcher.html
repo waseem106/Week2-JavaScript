@@ -69,14 +69,23 @@
 
     <script>
 
-       function addBackground(btn){
-        const bgColor= window.getComputedStyle(btn).backgroundColor
-        console.log("color",bgColor)
-        const body=document.getElementById('body')
-        console.log(body)
-        body.style.backgroundColor=`${bgColor}`
-       }
+    //    function addBackground(btn){
+    //     const bgColor= window.getComputedStyle(btn).backgroundColor
+    //     console.log("color",bgColor)
+    //     const body=document.getElementById('body')
+    //     console.log(body)
+    //     body.style.backgroundColor=`${bgColor}`
+    //    }
 
+    //    second way to achieve it 
+
+       document.querySelectorAll(".boxes button").forEach((btn) => {
+        btn.addEventListener('click',function(){
+            const bgColor=window.getComputedStyle(btn).backgroundColor
+            console.log(bgColor)
+            document.body.style.backgroundColor=`${bgColor}`
+        })
+       });
 
     //    console.log(document.body)
     //    console.log(document.head)
