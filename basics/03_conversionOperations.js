@@ -8,19 +8,19 @@ function display(value)
 
 const score="34"
 const valueInNumber=Number(score)
-display(valueInNumber)
+display(valueInNumber)  //34 as number
 
 
-const isLoggedIn=""
+const isLoggedIn="true"
 
 const booleanIsLoggedIn=Boolean(isLoggedIn)
-display(isLoggedIn)
+display(isLoggedIn)  //true as string 
 
 
 const someNumber=234234
 
 const stringNumber=String(someNumber)
-display(stringNumber)
+display(stringNumber)  //234234 as string 
 
 
 

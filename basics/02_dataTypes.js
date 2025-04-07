@@ -1,8 +1,8 @@
 "use strict"; //treat all the Js code as newer version
 
-console.log("null type: ", typeof null);
-console.log("undefined type: ", typeof  undefined);
-console.log("undefined type: ", typeof NaN);
+console.log("null type: ", typeof null); //object
+console.log("undefined type: ", typeof  undefined); //undefined
+console.log("undefined type: ", typeof NaN); //number
 console.log("undefined type: ", typeof typeof NaN); //first will return number that will be string so string
 
 //checking falsy and truthy values
@@ -16,15 +16,15 @@ function testingTruthy(value){
     }
 }
 
-testingTruthy(false)
-testingTruthy(true)
-testingTruthy(0)
-testingTruthy(1)
-testingTruthy(null)
-testingTruthy(undefined)
-testingTruthy("name")
-testingTruthy({})
-testingTruthy([])
+testingTruthy(false)   //falsy
+testingTruthy(true)     //truthy
+testingTruthy(0)        //falsy
+testingTruthy(1)        //true    
+testingTruthy(null)     //falsy
+testingTruthy(undefined) //falsy
+testingTruthy("name")    //name os truthy
+testingTruthy({})         //truthy
+testingTruthy([])          //truthy
 
 
 
